@@ -1,15 +1,88 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width:1200px) {
 
     .container {
         width: 60%;
     }
 
-    /* Cache le menu burger */
-    .menu-burger {
+    /**
+     * Alert
+     */
+    .alert {
+        display: block;
+        color: var(--white);
+        text-align: center;
+        background: var(--green) url('../images/banner_wave.svg') no-repeat;
+        padding: 15px 0;
+    }
+
+    /**
+     * Navigation cacher le menu burger */
+    nav .menu-burger {
         display: none;
     }
 
-    .menu-desktop{
+    nav .menu-desktop {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        
+    }
+    nav .menu-desktop a {
         text-decoration: none;
+        color: var(--gray-dark);
+    }
+    /* Logo */
+    nav img {
+        width: 10%;        
+    }
+
+    /**
+     * Header
+     * Le sélecteur avancé ">" permet de dire :
+     * "Prends le premier élément juste en dessous du parent"
+     * ou faire "main section:first-child .container"
+     */
+    header,
+    main section:first-child > div,
+    main section:last-child section {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        text-align: left;
+        padding: 100px 0;
+    }
+
+    header h1 {
+         font-size: 4rem;
+    }
+
+    /**
+     * "!important permet de spécifier que lq propriété est la plus
+     * importante dans la feuille CSS
+    */
+    header img {
+        margin: 0 !important; 
+    }
+
+     main section h2 {
+        font-size: 3.2rem;
+    }
+
+    main section:last-child section {
+        text-align: center;
+    }
+    .pcture {
+        margin: 0;
+    }
+
+    footer div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer div ul {
+        margin: 0;
     }
 }
