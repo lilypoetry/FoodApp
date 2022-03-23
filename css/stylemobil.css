@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --gray-light: #f5fbfc;
+    --gray-dark: #08090a;
+    --green: #35b8be;
+    --green-dark: #1b9097;
+    --green-light: #f5fbfc;
+    --blue-dark: #546285;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;    
+    color: var(--gray-dark);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/*
+ * Text color
+ */
+ .green {
+    color: var(--green);
+}
+
+ /**
+  * Alert
+  */
+.alert,
+.menu-desktop {
+    display: none;
+}
+
+/**
+ * Navigation
+ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;    
+}
+
+nav img {
+    width: 20%;
+}
+
+.menu-burger {
+    background-color: var(--gray-light);
+    border-radius: 8px;
+    padding: 10px 10px 5px 10px;
+}
+
+.menu-burger svg {
+    width: 32px;
+}
+
+/**
+ * Header
+ */
+ header,
+ main section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p,
+main section p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    font-weight: 300;
+    margin: 50px 0;
+    color: var(--blue-dark);
+}
+
+.picture {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.btn-green {
+    text-decoration: none;
+    color: var(--white);
+    padding: 14px 24px;
+    border-radius: 6px;
+    background: var(--green) url('../images/button_wave.svg') no-repeat;
+}
+
+main section h2 {
+    color: var(--green);
+    font-size: 2.8rem;
+}    
+
+main section:first-child {
+    background-color: var(--green-light);
+}
+/**
+ * : last-child permet de cibler un élément positionné en 
+ * dernier enfant de son parent
+ */
+main section:last-child p {
+    margin: 0;
+}
+
+main section :last-child h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    /* margin: 20px 0 10px 0 */
+}
+
+/** 
+ * Footer
+ */
+footer {
+    background-color: var(--green-light);
+    padding: 20px 0;
+}
+
+footer p {
+    color: var(--green-dark);
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+footer ul a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--blue-dark);
+}

@@ -1,0 +1,15 @@
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 60%;
+    }
+
+    /* Cache le menu burger */
+    .menu-burger {
+        display: none;
+    }
+
+    .menu-desktop{
+        text-decoration: none;
+    }
+}
